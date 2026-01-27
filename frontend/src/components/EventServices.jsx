@@ -8,7 +8,6 @@ const EventServices = () => {
     'Professional audio recording',
     'Cinematic highlight film (3-8 minutes)',
     'Full event film (1-2 hours)',
-    'Drone footage available (when applicable)',
     'Color grading and professional editing',
     'Digital delivery + physical USB',
     'Delivery within 14-30 days',
