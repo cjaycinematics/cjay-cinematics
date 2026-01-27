@@ -7,19 +7,19 @@ const About = () => {
   // Founder photos - professional images showcasing Cjay Reed
   const founderPhotos = [
     {
-      url: 'https://customer-assets.emergentagent.com/job_9ccb7552-952b-4fc8-8354-965b1e13783c/artifacts/a7m1jmg5_IMG_5845.jpeg',
+      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/lv8tpcoo_IMG_5845.jpeg',
       alt: 'Cjay Reed - Founder',
     },
     {
-      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/z3tcyx6d_IMG_5845.jpeg',
+      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/nrgbpbwp_IMG_5168.jpeg',
       alt: 'Cjay Reed - Professional Portrait',
     },
     {
-      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/2g4ehwra_IMG_5168.jpeg',
+      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/qmr56k8y_129A1529.jpeg',
       alt: 'Cjay Reed - Behind the Lens',
     },
     {
-      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/teg4t22p_IMG_5171.jpeg',
+      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/6qggiy0v_IMG_5660.jpeg',
       alt: 'Cjay Reed - Cinematographer',
     },
   ];
@@ -62,20 +62,41 @@ const About = () => {
             <p className="text-lg text-warm-cream italic">Founder & Cinematographer</p>
             
             <p className="text-warm-cream leading-relaxed">
-              Cjay Cinematics was founded on a simple but profound belief: every life has a story worth 
-              telling, and every moment worth preserving deserves to be captured with artistry and respect.
+              Cjay Cinematics was founded by Cjay Reed, a creative with a deep respect for family, culture, 
+              and meaningful moments. With a strong skill set in capturing photos and videos through modern 
+              technology, Cjay took initiative to develop his talent into purposeful storytelling.
             </p>
             
             <p className="text-warm-cream leading-relaxed">
-              Specializing in memorial films and life celebrations, Cjay brings a unique combination of 
-              technical excellence and deep empathy to every project. With a documentary-style approach 
-              and cinematic eye, each film is crafted to honor legacies, preserve memories, and tell 
-              stories that matter.
+              Through experience in funeral service environments and community-based events, Cjay found his 
+              calling in creating funeral cinematics work that prioritizes dignity, accuracy, and respect 
+              during life's most sensitive moments.
             </p>
             
             <p className="text-warm-cream leading-relaxed">
-              Serving Oklahoma and surrounding areas, Cjay Cinematics is dedicated to providing families 
-              with beautiful, timeless films they'll treasure for generations.
+              Whether documenting a funeral service or a life celebration, the focus remains the same: 
+              preserving moments with care, intention, and respect for those involved.
+            </p>
+            
+            <p className="text-warm-cream leading-relaxed">
+              Cjay plans to finish EMS school and become an EMT. He plans to attend the University of Central 
+              Oklahoma and major in Funeral Science. In the future, Cjay also plans to become a firefighter 
+              and continue serving the community.
+            </p>
+            
+            <p className="text-warm-cream leading-relaxed">
+              Cjay currently works at Keith D. Biglow Funeral Home in Muskogee, Oklahoma, where he is gaining 
+              real experience working with families and learning the funeral service profession.
+            </p>
+            
+            <p className="text-warm-cream leading-relaxed">
+              Cjay also holds leadership roles in his school and community. He is the President of the Muskogee 
+              Alumni Chapter Kappa League, where he has been involved for seven years. He also serves as the Vice 
+              President of Business Professionals of America (BPA).
+            </p>
+            
+            <p className="text-warm-cream leading-relaxed">
+              Cjay is a senior at Muskogee High School and plans to graduate in May 2026.
             </p>
 
             {/* Key Values */}
