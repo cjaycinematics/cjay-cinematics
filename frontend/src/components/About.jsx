@@ -173,58 +173,6 @@ const About = () => {
               </div>
             </div>
           </div>
-
-          {/* Founder Photo Carousel - Right Side */}
-          <div className="relative">
-            <div className="founder-carousel">
-              <div 
-                className="founder-carousel-track"
-                style={{ transform: `translateX(-${currentImage * 100}%)` }}
-              >
-                {founderPhotos.map((photo, index) => (
-                  <img
-                    key={index}
-                    src={photo.url}
-                    alt={photo.alt}
-                    className="founder-carousel-image"
-                  />
-                ))}
-              </div>
-
-              {/* Navigation Arrows */}
-              <button
-                onClick={goToPrevious}
-                className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black/90 text-gold p-3 rounded-full transition-all z-10"
-                aria-label="Previous image"
-              >
-                <ChevronLeft size={24} />
-              </button>
-              
-              <button
-                onClick={goToNext}
-                className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black/90 text-gold p-3 rounded-full transition-all z-10"
-                aria-label="Next image"
-              >
-                <ChevronRight size={24} />
-              </button>
-
-              {/* Dots Navigation */}
-              <div className="carousel-controls">
-                {founderPhotos.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => goToImage(index)}
-                    className={`carousel-dot ${index === currentImage ? 'active' : ''}`}
-                    aria-label={`Go to image ${index + 1}`}
-                  />
-                ))}
-              </div>
-            </div>
-
-            <p className="text-center text-gold text-sm mt-4 italic">
-              Founder – Cjay Reed
-            </p>
-          </div>
         </div>
 
         {/* Website Management Feature */}
