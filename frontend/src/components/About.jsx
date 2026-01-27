@@ -55,11 +55,69 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Bio Text - Left Side */}
-          <div className="space-y-6">
-            <h3 className="text-3xl font-serif text-gold">Cjay Reed</h3>
-            <p className="text-lg text-warm-cream italic">Founder & Cinematographer</p>
+        <div className="max-w-5xl mx-auto">
+          {/* Founder Photo Carousel - Top/Center */}
+          <div className="mb-12">
+            <div className="relative max-w-2xl mx-auto">
+              <div className="founder-carousel">
+                <div 
+                  className="founder-carousel-track"
+                  style={{ transform: `translateX(-${currentImage * 100}%)` }}
+                >
+                  {founderPhotos.map((photo, index) => (
+                    <img
+                      key={index}
+                      src={photo.url}
+                      alt={photo.alt}
+                      className="founder-carousel-image object-cover"
+                      style={{ 
+                        height: '450px',
+                        objectPosition: 'center 20%'
+                      }}
+                    />
+                  ))}
+                </div>
+
+                {/* Navigation Arrows */}
+                <button
+                  onClick={goToPrevious}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black/90 text-gold p-3 rounded-full transition-all z-10"
+                  aria-label="Previous image"
+                >
+                  <ChevronLeft size={24} />
+                </button>
+                
+                <button
+                  onClick={goToNext}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black/90 text-gold p-3 rounded-full transition-all z-10"
+                  aria-label="Next image"
+                >
+                  <ChevronRight size={24} />
+                </button>
+
+                {/* Dots Navigation */}
+                <div className="carousel-controls">
+                  {founderPhotos.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => goToImage(index)}
+                      className={`carousel-dot ${index === currentImage ? 'active' : ''}`}
+                      aria-label={`Go to image ${index + 1}`}
+                    />
+                  ))}
+                </div>
+              </div>
+
+              <p className="text-center text-gold text-sm mt-4 italic">
+                Founder – Cjay Reed
+              </p>
+            </div>
+          </div>
+
+          {/* Bio Text - Below Photos */}
+          <div className="space-y-6 max-w-4xl mx-auto">
+            <h3 className="text-3xl font-serif text-gold text-center">Cjay Reed</h3>
+            <p className="text-lg text-warm-cream italic text-center">Founder & Cinematographer</p>
             
             <p className="text-warm-cream leading-relaxed">
               Cjay Cinematics was founded by Cjay Reed, a creative with a deep respect for family, culture, 
