@@ -7,20 +7,24 @@ const About = () => {
   // Founder photos - professional images showcasing Cjay Reed
   const founderPhotos = [
     {
-      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/lv8tpcoo_IMG_5845.jpeg',
-      alt: 'Cjay Reed - Founder',
+      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/zco69ipl_IMG_0226.png',
+      alt: 'Cjay Reed - Professional',
     },
     {
-      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/nrgbpbwp_IMG_5168.jpeg',
-      alt: 'Cjay Reed - Professional Portrait',
+      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/dpf5o94u_129A1529.jpeg',
+      alt: 'Cjay Reed - Cinematographer',
     },
     {
-      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/qmr56k8y_129A1529.jpeg',
+      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/e8hki8mg_IMG_5866.jpeg',
       alt: 'Cjay Reed - Behind the Lens',
     },
     {
-      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/6qggiy0v_IMG_5660.jpeg',
-      alt: 'Cjay Reed - Cinematographer',
+      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/gpnhwmoc_IMG_5845.jpeg',
+      alt: 'Cjay Reed - Founder',
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/z1gc71kf_IMG_5164.jpeg',
+      alt: 'Cjay Reed - Portrait',
     },
   ];
 
