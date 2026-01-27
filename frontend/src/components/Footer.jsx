@@ -89,7 +89,7 @@ const Footer = () => {
         {/* Social Links */}
         <div className="footer-social">
           <a
-            href="https://www.instagram.com/cjaycinematics"
+            href="https://www.instagram.com/cjaycinematics?igsh=MWhzOHI5MXUyMGx0MQ%3D%3D&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"
@@ -98,7 +98,7 @@ const Footer = () => {
             <Instagram size={24} />
           </a>
           <a
-            href="https://www.facebook.com/profile.php?id=61571383887590"
+            href="https://www.facebook.com/share/187chw8RpE/?mibextid=wwXIfr"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"
