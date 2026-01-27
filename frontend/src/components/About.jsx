@@ -7,24 +7,36 @@ const About = () => {
   // Founder photos - professional images showcasing Cjay Reed
   const founderPhotos = [
     {
-      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/zco69ipl_IMG_0226.png',
-      alt: 'Cjay Reed - Professional',
-    },
-    {
-      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/dpf5o94u_129A1529.jpeg',
-      alt: 'Cjay Reed - Cinematographer',
-    },
-    {
-      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/e8hki8mg_IMG_5866.jpeg',
-      alt: 'Cjay Reed - Behind the Lens',
-    },
-    {
-      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/gpnhwmoc_IMG_5845.jpeg',
+      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/ctc5nckp_IMG_5845.jpeg',
       alt: 'Cjay Reed - Founder',
     },
     {
+      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/cfal4njs_IMG_5153.jpeg',
+      alt: 'Cjay Reed - Professional',
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/4v316ofa_IMG_5154.jpeg',
+      alt: 'Cjay Reed - Cinematographer',
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/zco69ipl_IMG_0226.png',
+      alt: 'Cjay Reed - Behind the Lens',
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/dpf5o94u_129A1529.jpeg',
+      alt: 'Cjay Reed - Award Ceremony',
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/e8hki8mg_IMG_5866.jpeg',
+      alt: 'Cjay Reed - Professional Portrait',
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/gpnhwmoc_IMG_5845.jpeg',
+      alt: 'Cjay Reed - Suit Portrait',
+    },
+    {
       url: 'https://customer-assets.emergentagent.com/job_memorial-films/artifacts/z1gc71kf_IMG_5164.jpeg',
-      alt: 'Cjay Reed - Portrait',
+      alt: 'Cjay Reed - Detail Shot',
     },
   ];
 
@@ -175,50 +187,6 @@ const About = () => {
                 <Award size={32} className="text-gold mx-auto mb-2" />
                 <p className="text-warm-cream text-sm font-medium">Cinematic</p>
               </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Website Management Feature */}
-        <div className="mt-16 p-8 bg-charcoal/50 border border-gold/20 rounded-lg">
-          <h3 className="text-gold text-2xl font-serif mb-4">Easy Website Updates</h3>
-          <p className="text-warm-cream mb-4">
-            Your website is built for flexibility and easy management:
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <h4 className="text-off-white font-semibold mb-2">Portfolio Management</h4>
-              <ul className="text-warm-cream space-y-2 text-sm">
-                <li className="flex items-start gap-2">
-                  <span className="text-gold">✓</span>
-                  <span>Add videos by embedding YouTube/Vimeo links</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gold">✓</span>
-                  <span>Upload photos directly to gallery sections</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gold">✓</span>
-                  <span>Organize content by category (Memorial, Events, etc.)</span>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-off-white font-semibold mb-2">Content Updates</h4>
-              <ul className="text-warm-cream space-y-2 text-sm">
-                <li className="flex items-start gap-2">
-                  <span className="text-gold">✓</span>
-                  <span>Update pricing packages anytime</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gold">✓</span>
-                  <span>Add new testimonials as they come in</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gold">✓</span>
-                  <span>Edit service descriptions and features</span>
-                </li>
-              </ul>
             </div>
           </div>
         </div>

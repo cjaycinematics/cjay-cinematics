@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Facebook, Youtube } from 'lucide-react';
+import { Instagram, Facebook } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -89,7 +89,7 @@ const Footer = () => {
         {/* Social Links */}
         <div className="footer-social">
           <a
-            href="https://instagram.com/cjaycinematics"
+            href="https://www.instagram.com/cjaycinematics"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"
@@ -98,22 +98,13 @@ const Footer = () => {
             <Instagram size={24} />
           </a>
           <a
-            href="https://facebook.com/cjaycinematics"
+            href="https://www.facebook.com/profile.php?id=61571383887590"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"
             aria-label="Facebook"
           >
             <Facebook size={24} />
-          </a>
-          <a
-            href="https://youtube.com/cjaycinematics"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-link"
-            aria-label="YouTube"
-          >
-            <Youtube size={24} />
           </a>
         </div>
 

@@ -101,12 +101,12 @@ const Contact = () => {
               </p>
             </div>
 
-            {/* Social Media Placeholders */}
+            {/* Social Media Links */}
             <div>
               <h4 className="text-xl font-serif text-gold mb-4">Follow Us</h4>
               <div className="space-y-3">
                 <a 
-                  href="https://instagram.com/cjaycinematics" 
+                  href="https://www.instagram.com/cjaycinematics" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-warm-cream hover:text-gold transition-colors"
@@ -115,21 +115,12 @@ const Contact = () => {
                   <span className="font-medium">@cjaycinematics</span>
                 </a>
                 <a 
-                  href="https://facebook.com/cjaycinematics" 
+                  href="https://www.facebook.com/profile.php?id=61571383887590" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-warm-cream hover:text-gold transition-colors"
                 >
                   <span className="text-sm">Facebook:</span>
-                  <span className="font-medium">Cjay Cinematics</span>
-                </a>
-                <a 
-                  href="https://youtube.com/cjaycinematics" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-warm-cream hover:text-gold transition-colors"
-                >
-                  <span className="text-sm">YouTube:</span>
                   <span className="font-medium">Cjay Cinematics</span>
                 </a>
               </div>

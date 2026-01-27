@@ -78,9 +78,9 @@ const Pricing = () => {
   ];
 
   const signatureBundle = {
-    name: 'The Cjay Special',
+    name: 'Cjay Cinematics Bundle',
     price: '$450',
-    period: 'Signature Bundle',
+    period: 'Signature Package',
     featured: true,
     features: [
       'Creative freestyle coverage',
@@ -152,10 +152,10 @@ const Pricing = () => {
           </div>
         </div>
 
-        {/* Signature Bundle - The Cjay Special */}
+        {/* Signature Bundle - Cjay Cinematics Bundle */}
         <div className="mb-20">
           <h3 className="text-3xl font-serif text-gold text-center mb-12">
-            Signature Bundle
+            Signature Package
           </h3>
           <div className="max-w-2xl mx-auto">
             <PricingCard pkg={signatureBundle} index={0} />
