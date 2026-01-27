@@ -2,98 +2,94 @@ import React from 'react';
 import { CheckCircle2, Star } from 'lucide-react';
 
 const Pricing = () => {
-  const memorialPackages = [
+  const cinematicPackages = [
     {
-      name: 'Essential Memorial',
-      price: '$800',
-      period: 'Starting Price',
+      name: '3-Minute Cinematic',
+      price: '$125',
+      period: 'Perfect for highlights',
       features: [
-        'Full ceremony filming (up to 2 hours)',
-        'Professional audio recording',
-        'Highlight film (5-8 minutes)',
-        'Digital delivery via cloud link',
-        'USB drive included',
-        '7-14 day turnaround',
+        'Professional cinematic editing',
+        'High-quality audio mix',
+        'Color grading included',
+        'Digital delivery',
+        'Quick turnaround',
       ],
     },
     {
-      name: 'Premium Memorial',
-      price: '$1,200',
-      period: 'Most Popular',
-      featured: true,
+      name: '5-Minute Cinematic',
+      price: '$175',
+      period: 'Ideal for recaps',
       features: [
-        'Everything in Essential',
-        'Full ceremony film (professionally edited)',
-        'Family interview segments',
-        'Photo slideshow tribute',
-        'Custom music selection',
-        'Priority turnaround (5-10 days)',
-        'Two USB drives',
+        'Extended storytelling',
+        'Professional editing & audio',
+        'Color grading',
+        'Digital delivery',
+        'Music selection',
       ],
     },
     {
-      name: 'Legacy Memorial',
-      price: '$1,800',
-      period: 'Complete Coverage',
+      name: '7-Minute Cinematic',
+      price: '$225',
+      period: 'Extended coverage',
       features: [
-        'Everything in Premium',
-        'Multi-camera coverage',
-        'Extended family interviews',
-        'Reception/gathering coverage',
-        'Professional photo book',
-        'Three USB drives',
-        'Rush delivery available (3-7 days)',
+        'Comprehensive narrative',
+        'Professional editing & audio',
+        'Custom color grading',
+        'Digital delivery',
+        'Enhanced storytelling',
+      ],
+    },
+    {
+      name: '10-Minute Cinematic',
+      price: '$300',
+      period: 'Comprehensive film',
+      features: [
+        'Full event documentation',
+        'Professional editing & audio',
+        'Premium color grading',
+        'Digital delivery',
+        'Multiple scenes & sequences',
+      ],
+    },
+    {
+      name: '20-Minute Cinematic',
+      price: '$350',
+      period: 'Full event documentary',
+      features: [
+        'Complete ceremony coverage',
+        'Professional multi-scene editing',
+        'Premium color grading',
+        'Digital delivery',
+        'Extended narrative storytelling',
+      ],
+    },
+    {
+      name: '40-Minute Cinematic',
+      price: '$450',
+      period: 'Complete event film',
+      features: [
+        'Full event documentation',
+        'Comprehensive editing',
+        'Premium color grading',
+        'Digital delivery',
+        'Complete cinematic experience',
       ],
     },
   ];
 
-  const eventPackages = [
-    {
-      name: 'Celebration Essentials',
-      price: '$1,000',
-      period: 'Starting Price',
-      features: [
-        'Up to 4 hours coverage',
-        'Single camera cinematography',
-        'Highlight film (3-5 minutes)',
-        'Professional audio',
-        'Digital delivery',
-        'USB drive',
-        '14-21 day turnaround',
-      ],
-    },
-    {
-      name: 'Premier Celebration',
-      price: '$1,600',
-      period: 'Best Value',
-      featured: true,
-      features: [
-        'Everything in Essentials',
-        'Up to 6 hours coverage',
-        'Dual camera setup',
-        'Extended highlight film (5-8 minutes)',
-        'Full event film',
-        'Drone footage (when applicable)',
-        'Two USB drives',
-        '14 day turnaround',
-      ],
-    },
-    {
-      name: 'Cinematic Experience',
-      price: '$2,400',
-      period: 'Ultimate Package',
-      features: [
-        'Everything in Premier',
-        'All-day coverage (up to 10 hours)',
-        'Three camera angles',
-        'Photo + video coverage',
-        'Same-day highlight preview',
-        'Professional color grading',
-        'Three USB drives + photo book',
-        'Rush delivery (7-10 days)',
-      ],
-    },
-  ];
+  const signatureBundle = {
+    name: 'The Cjay Special',
+    price: '$450',
+    period: 'Signature Bundle',
+    featured: true,
+    features: [
+      'Creative freestyle coverage',
+      'No strict time limit',
+      'Creator-led vision',
+      'One-of-a-kind cinematic experience',
+      'Documentary-style approach',
+    ],
+  };
 
   const PricingCard = ({ pkg, index }) => (
     <div 
@@ -144,63 +140,47 @@ const Pricing = () => {
           </p>
         </div>
 
-        {/* Memorial Services Pricing */}
+        {/* Cinematic Packages */}
+        <div className="mb-16">
+          <h3 className="text-3xl font-serif text-gold text-center mb-12">
+            Cinematic Packages
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-3 gap-8">
+            {cinematicPackages.map((pkg, index) => (
+              <PricingCard key={index} pkg={pkg} index={index} />
+            ))}
+          </div>
+        </div>
+
+        {/* Signature Bundle - The Cjay Special */}
         <div className="mb-20">
           <h3 className="text-3xl font-serif text-gold text-center mb-12">
-            Memorial & Funeral Services
+            Signature Bundle
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {memorialPackages.map((pkg, index) => (
-              <PricingCard key={index} pkg={pkg} index={index} />
-            ))}
+          <div className="max-w-2xl mx-auto">
+            <PricingCard pkg={signatureBundle} index={0} />
           </div>
         </div>
 
-        {/* Event Services Pricing */}
-        <div>
-          <h3 className="text-3xl font-serif text-gold text-center mb-12">
-            Celebrations & Events
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {eventPackages.map((pkg, index) => (
-              <PricingCard key={index} pkg={pkg} index={index} />
-            ))}
-          </div>
-        </div>
-
-        {/* Add-Ons & Custom Services */}
+        {/* Payment Policy */}
         <div className="mt-16 p-8 bg-deep-black/60 border border-gold/20 rounded-lg">
-          <h3 className="text-gold text-2xl font-serif mb-4 text-center">Add-Ons & Custom Options</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-            <div className="text-center">
-              <p className="text-off-white font-semibold mb-2">Legacy Interviews</p>
-              <p className="text-gold text-xl mb-1">$300+</p>
-              <p className="text-warm-cream text-sm">Per interview session</p>
+          <h3 className="text-gold text-2xl font-serif mb-6 text-center">Payment Policy</h3>
+          <div className="space-y-4 max-w-3xl mx-auto">
+            <div className="flex items-start gap-3 p-4 bg-charcoal/50 rounded-lg">
+              <CheckCircle2 size={20} className="text-gold flex-shrink-0 mt-1" />
+              <p className="text-warm-cream">50% deposit is required upfront to secure the service</p>
             </div>
-            <div className="text-center">
-              <p className="text-off-white font-semibold mb-2">Drone Footage</p>
-              <p className="text-gold text-xl mb-1">$200</p>
-              <p className="text-warm-cream text-sm">When applicable</p>
+            <div className="flex items-start gap-3 p-4 bg-charcoal/50 rounded-lg">
+              <CheckCircle2 size={20} className="text-gold flex-shrink-0 mt-1" />
+              <p className="text-warm-cream">Remaining balance is due before final delivery</p>
             </div>
-            <div className="text-center">
-              <p className="text-off-white font-semibold mb-2">Rush Delivery</p>
-              <p className="text-gold text-xl mb-1">$150+</p>
-              <p className="text-warm-cream text-sm">3-5 day turnaround</p>
+            <div className="flex items-start gap-3 p-4 bg-charcoal/50 rounded-lg">
+              <CheckCircle2 size={20} className="text-gold flex-shrink-0 mt-1" />
+              <p className="text-warm-cream">Services are not confirmed until the deposit is received</p>
             </div>
-            <div className="text-center">
-              <p className="text-off-white font-semibold mb-2">Photo Coverage</p>
-              <p className="text-gold text-xl mb-1">$400+</p>
-              <p className="text-warm-cream text-sm">Professional photography</p>
-            </div>
-            <div className="text-center">
-              <p className="text-off-white font-semibold mb-2">Additional Hours</p>
-              <p className="text-gold text-xl mb-1">$150/hr</p>
-              <p className="text-warm-cream text-sm">Beyond package coverage</p>
-            </div>
-            <div className="text-center">
-              <p className="text-off-white font-semibold mb-2">Custom Packages</p>
-              <p className="text-gold text-xl mb-1">Contact</p>
-              <p className="text-warm-cream text-sm">Tailored to your needs</p>
+            <div className="flex items-start gap-3 p-4 bg-charcoal/50 rounded-lg">
+              <CheckCircle2 size={20} className="text-gold flex-shrink-0 mt-1" />
+              <p className="text-warm-cream">Deposits are non-refundable once services are scheduled</p>
             </div>
           </div>
         </div>
