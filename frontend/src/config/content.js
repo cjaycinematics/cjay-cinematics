@@ -14,7 +14,7 @@ export const siteConfig = {
   },
   
   // Service Area
-  serviceArea: 'Oklahoma and surrounding areas',
+  serviceArea: 'Muskogee, Oklahoma and surrounding areas',
   
   // Logo URL
   logoUrl: 'https://customer-assets.emergentagent.com/job_9ccb7552-952b-4fc8-8354-965b1e13783c/artifacts/i4z8wb22_C3A9245E-F85D-4787-B9DA-A6F39C767447.png',

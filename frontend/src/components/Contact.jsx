@@ -94,7 +94,7 @@ const Contact = () => {
             <div className="p-6 bg-charcoal/50 border border-gold/20 rounded-lg">
               <h4 className="text-xl font-serif text-gold mb-3">Service Areas</h4>
               <p className="text-warm-cream mb-2">
-                Proudly serving Oklahoma and surrounding areas
+                Proudly serving Muskogee, Oklahoma and surrounding areas
               </p>
               <p className="text-warm-cream text-sm opacity-80">
                 Travel available for destination events and special circumstances.

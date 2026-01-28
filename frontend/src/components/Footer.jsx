@@ -123,7 +123,7 @@ const Footer = () => {
           © {currentYear} Cjay Cinematics. All rights reserved.
           <br />
           <span className="text-xs">
-            Serving Oklahoma and surrounding areas with cinematic excellence.
+            Serving Muskogee, Oklahoma and surrounding areas with cinematic excellence.
           </span>
           <br />
           <a 
