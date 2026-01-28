@@ -1,0 +1,9 @@
+{
+  "enabled": false,
+  "autoplay": false,
+  "volume": 0.3,
+  "loop": true,
+  "musicFile": "/music/background-music.mp3",
+  "showControls": true,
+  "fadeIn": true
+}

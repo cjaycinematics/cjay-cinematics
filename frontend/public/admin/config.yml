@@ -21,6 +21,18 @@ collections:
           - { label: "Instagram URL", name: "instagram", widget: "string" }
           - { label: "Facebook URL", name: "facebook", widget: "string" }
 
+      - label: "Background Music Settings"
+        name: "music"
+        file: "src/data/music-settings.json"
+        fields:
+          - { label: "Enable Background Music", name: "enabled", widget: "boolean", default: false, hint: "Turn on/off background music for the entire site" }
+          - { label: "Autoplay", name: "autoplay", widget: "boolean", default: false, hint: "Start music automatically when page loads" }
+          - { label: "Volume", name: "volume", widget: "number", default: 0.3, min: 0, max: 1, step: 0.1, hint: "Volume level (0.0 to 1.0)" }
+          - { label: "Loop Music", name: "loop", widget: "boolean", default: true, hint: "Repeat music continuously" }
+          - { label: "Music File Path", name: "musicFile", widget: "string", default: "/music/background-music.mp3", hint: "Path to your music file (upload to public/music folder)" }
+          - { label: "Show Player Controls", name: "showControls", widget: "boolean", default: true, hint: "Let visitors control the music" }
+          - { label: "Fade In Effect", name: "fadeIn", widget: "boolean", default: true, hint: "Gradually increase volume on start" }
+
   # Pricing Packages
   - name: "pricing"
     label: "Pricing Packages"
