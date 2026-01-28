@@ -6,9 +6,86 @@ media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
+  # HERO SECTION
+  - name: "hero"
+    label: "🏠 Hero Section (Homepage)"
+    files:
+      - label: "Hero Content"
+        name: "hero"
+        file: "src/data/hero.json"
+        fields:
+          - { label: "Main Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - label: "Call-to-Action Buttons"
+            name: "buttons"
+            widget: "list"
+            fields:
+              - { label: "Button Text", name: "text", widget: "string" }
+              - { label: "Button Link", name: "link", widget: "string" }
+              - { label: "Button Type", name: "type", widget: "select", options: ["primary", "secondary"] }
+
+  # SERVICES SECTION
+  - name: "services-cards"
+    label: "💼 Services Cards"
+    files:
+      - label: "Service Cards"
+        name: "services"
+        file: "src/data/services.json"
+        fields:
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Service Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Icon Name", name: "icon", widget: "string", hint: "lucide-react icon name (Heart, Video, Camera, etc.)" }
+
+  # MEMORIAL SERVICES DETAIL
+  - name: "memorial-services"
+    label: "🕊️ Memorial Services Section"
+    files:
+      - label: "Memorial Services Content"
+        name: "memorial"
+        file: "src/data/memorial-services.json"
+        fields:
+          - { label: "Section Heading", name: "heading", widget: "string" }
+          - { label: "Main Description", name: "description", widget: "text" }
+          - { label: "Sub Description", name: "subDescription", widget: "text" }
+          - { label: "Features List", name: "features", widget: "list", field: { label: "Feature", name: "feature", widget: "string" } }
+
+  # EVENT SERVICES DETAIL
+  - name: "event-services"
+    label: "🎉 Event Services Section"
+    files:
+      - label: "Event Services Content"
+        name: "events"
+        file: "src/data/event-services.json"
+        fields:
+          - { label: "Section Heading", name: "heading", widget: "string" }
+          - { label: "Main Description", name: "description", widget: "text" }
+          - { label: "Sub Description", name: "subDescription", widget: "text" }
+          - { label: "Features List", name: "features", widget: "list", field: { label: "Feature", name: "feature", widget: "string" } }
+
+  # SHOWCASE IMAGES
+  - name: "showcase"
+    label: "📸 Showcase Images"
+    files:
+      - label: "Showcase Gallery"
+        name: "showcase-images"
+        file: "src/data/showcase-images.json"
+        fields:
+          - label: "Showcase Images"
+            name: "images"
+            widget: "list"
+            fields:
+              - { label: "Image URL", name: "url", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string" }
+              - { label: "Category", name: "category", widget: "string", default: "showcase" }
+
   # Business Settings
   - name: "settings"
-    label: "Site Settings"
+    label: "⚙️ Site Settings"
     files:
       - label: "Business Information"
         name: "business"
@@ -35,7 +112,7 @@ collections:
 
   # Pricing Packages
   - name: "pricing"
-    label: "Pricing Packages"
+    label: "💰 Pricing Packages"
     folder: "src/data/pricing"
     create: true
     slug: "{{slug}}"
@@ -48,7 +125,7 @@ collections:
 
   # Testimonials
   - name: "testimonials"
-    label: "Testimonials"
+    label: "💬 Testimonials"
     folder: "src/data/testimonials"
     create: true
     slug: "{{slug}}"
@@ -59,25 +136,25 @@ collections:
 
   # Founder Bio
   - name: "founder"
-    label: "Founder Information"
+    label: "👤 Founder Information"
     files:
-      - label: "Founder Bio"
+      - label: "Founder Bio & Photos"
         name: "bio"
         file: "src/data/founder.json"
         fields:
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Biography", name: "bio", widget: "list", field: { label: "Paragraph", name: "paragraph", widget: "text" } }
-          - label: "Photos"
+          - label: "Founder Photos"
             name: "photos"
             widget: "list"
             fields:
-              - { label: "Image URL", name: "url", widget: "string" }
+              - { label: "Image URL", name: "url", widget: "image" }
               - { label: "Alt Text", name: "alt", widget: "string" }
 
   # Portfolio Items
   - name: "portfolio"
-    label: "Portfolio"
+    label: "📸 Portfolio"
     folder: "src/data/portfolio"
     create: true
     slug: "{{slug}}"
@@ -87,14 +164,3 @@ collections:
       - { label: "Type", name: "type", widget: "select", options: ["video", "photo"] }
       - { label: "Video/Image URL", name: "embedUrl", widget: "string" }
       - { label: "Description", name: "description", widget: "text", required: false }
-
-  # Services
-  - name: "services"
-    label: "Services"
-    folder: "src/data/services"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Service Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Icon Name", name: "icon", widget: "string", hint: "lucide-react icon name" }

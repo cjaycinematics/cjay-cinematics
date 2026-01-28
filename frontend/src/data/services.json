@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Funeral & Memorial Films",
+    "description": "Respectful, cinematic tributes that honor and celebrate lives lived with dignity and grace.",
+    "icon": "Heart"
+  },
+  {
+    "title": "Celebration of Life Films",
+    "description": "Joyful commemorations that capture the spirit, personality, and cherished memories of loved ones.",
+    "icon": "PartyPopper"
+  },
+  {
+    "title": "Family Tributes & Legacy Interviews",
+    "description": "Preserve family stories, wisdom, and memories for generations to come through thoughtful interviews.",
+    "icon": "Users"
+  },
+  {
+    "title": "Event Coverage",
+    "description": "Cinematic documentation of weddings, birthdays, anniversaries, and special milestones.",
+    "icon": "Video"
+  },
+  {
+    "title": "Highlight Film Add-On",
+    "description": "A beautifully edited short film capturing the most meaningful moments of your event.",
+    "icon": "Film"
+  },
+  {
+    "title": "Photo + Video Coverage",
+    "description": "Comprehensive coverage combining cinematic video with professional photography.",
+    "icon": "Camera"
+  }
+]

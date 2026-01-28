@@ -1,0 +1,17 @@
+{
+  "title": "Cjay Cinematics",
+  "subtitle": "Cinematic Storytelling",
+  "description": "We create cinematic films that preserve precious moments and honor the stories that matter most. From celebrations of life to joyous events, every frame is crafted with intention, artistry, and deep respect for the legacy we're capturing.",
+  "buttons": [
+    {
+      "text": "Book Now",
+      "link": "#contact",
+      "type": "primary"
+    },
+    {
+      "text": "View Pricing Guide",
+      "link": "#pricing",
+      "type": "secondary"
+    }
+  ]
+}
