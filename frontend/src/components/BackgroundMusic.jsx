@@ -8,12 +8,9 @@ const BackgroundMusic = () => {
   const [volume, setVolume] = useState(musicSettings.volume || 0.3);
   const audioRef = useRef(null);
 
-  // Don't render anything if music is disabled in admin
-  if (!musicSettings.enabled) {
-    return null;
-  }
-
   useEffect(() => {
+    if (!musicSettings.enabled) return;
+    
     if (audioRef.current) {
       audioRef.current.volume = volume;
       audioRef.current.loop = musicSettings.loop;
@@ -39,6 +36,11 @@ const BackgroundMusic = () => {
       }
     }
   }, [volume]);
+
+  // Don't render anything if music is disabled in admin
+  if (!musicSettings.enabled) {
+    return null;
+  }
 
   const togglePlay = () => {
     if (audioRef.current) {
