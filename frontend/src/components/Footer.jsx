@@ -125,6 +125,14 @@ const Footer = () => {
           <span className="text-xs">
             Serving Oklahoma and surrounding areas with cinematic excellence.
           </span>
+          <br />
+          <a 
+            href="/admin"
+            className="text-xs opacity-40 hover:opacity-100 hover:text-gold transition-all mt-2 inline-block"
+            aria-label="Admin Login"
+          >
+            Admin
+          </a>
         </p>
       </div>
     </footer>
