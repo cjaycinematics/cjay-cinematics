@@ -1,0 +1,88 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  # Business Settings
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "Business Information"
+        name: "business"
+        file: "src/config/content.js"
+        fields:
+          - { label: "Business Name", name: "businessName", widget: "string", default: "Cjay Cinematics" }
+          - { label: "Tagline", name: "tagline", widget: "string", default: "Cinematic Storytelling" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Service Area", name: "serviceArea", widget: "string" }
+          - { label: "Instagram URL", name: "instagram", widget: "string" }
+          - { label: "Facebook URL", name: "facebook", widget: "string" }
+
+  # Pricing Packages
+  - name: "pricing"
+    label: "Pricing Packages"
+    folder: "src/data/pricing"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Package Name", name: "name", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+      - { label: "Description", name: "period", widget: "string" }
+      - { label: "Features", name: "features", widget: "list" }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+
+  # Testimonials
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "src/data/testimonials"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Client Quote", name: "quote", widget: "text" }
+      - { label: "Client Name", name: "author", widget: "string" }
+      - { label: "Service Type", name: "role", widget: "string" }
+
+  # Founder Bio
+  - name: "founder"
+    label: "Founder Information"
+    files:
+      - label: "Founder Bio"
+        name: "bio"
+        file: "src/data/founder.json"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Biography", name: "bio", widget: "list", field: { label: "Paragraph", name: "paragraph", widget: "text" } }
+          - label: "Photos"
+            name: "photos"
+            widget: "list"
+            fields:
+              - { label: "Image URL", name: "url", widget: "string" }
+              - { label: "Alt Text", name: "alt", widget: "string" }
+
+  # Portfolio Items
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "src/data/portfolio"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Category", name: "category", widget: "select", options: ["memorial", "celebration", "events"] }
+      - { label: "Type", name: "type", widget: "select", options: ["video", "photo"] }
+      - { label: "Video/Image URL", name: "embedUrl", widget: "string" }
+      - { label: "Description", name: "description", widget: "text", required: false }
+
+  # Services
+  - name: "services"
+    label: "Services"
+    folder: "src/data/services"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Service Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Icon Name", name: "icon", widget: "string", hint: "lucide-react icon name" }
